@@ -59,26 +59,51 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 24px;                 /* increased padding for roomy layout */
+  border: 1px solid #e6e6e6;     /* lighter border like in the picture */
+  border-radius: 8px;            /* a bit more rounded */
+  background-color: #ffffff;     /* explicit white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); /* subtle shadow */
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 12px;
+  color: #1565c0;      /* stronger blue */
+  font-size: 22px;     /* larger heading */
+  font-weight: 700;
 }
 
 .activity-card p {
-  margin-bottom: 8px;
+  margin-bottom: 12px; /* slightly more breathing room between lines */
+  color: #333;
+  font-size: 16px;
 }
 
+.activity-card p.description {
+  font-size: 18px;     /* larger description like the picture */
+  color: #222;
+  margin-bottom: 16px;
+}
+
+/* Make the label text (Schedule / Availability / Participants) stand out */
+.activity-card p strong {
+  font-weight: 700;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Participants list: slightly tighter under the label, larger bullets and line-height */
 .activity-card ul {
-  margin-top: 5px; /* Reduced from 10px */
-  padding-left: 20px;
+  margin-top: 8px;     /* small gap between label and list */
+  padding-left: 28px;
   list-style-type: disc;
   color: #333;
+  line-height: 1.6;
+}
+
+.activity-card ul li {
+  margin-bottom: 10px; /* space between items to match screenshot */
+  font-size: 16px;
 }
 
 .form-group {
